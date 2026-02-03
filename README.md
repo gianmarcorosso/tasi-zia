@@ -1,4 +1,4 @@
-# tasi-zia
+# tasi-zia !
 
 A simple utility to toggle Zscaler on/off on macOS.
 
