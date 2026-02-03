@@ -6,10 +6,16 @@ A simple utility to toggle Zscaler on/off on macOS.
 
 Sometimes Zscaler's SSL inspection or network filtering interferes with legitimate development work, VPNs, or other tools. This script provides a quick way to temporarily disable Zscaler without uninstalling it.
 
-## Installation
+## Quick Install
 ```bash
-# Download or copy the script
-curl -o tasi-zia https://your-paste-url/raw
+curl -sL https://raw.githubusercontent.com/gianmarcorosso/tasi-zia/main/tasi-zia -o /usr/local/bin/tasi-zia && chmod +x /usr/local/bin/tasi-zia
+```
+
+## Manual Installation
+```bash
+# Clone the repo
+git clone https://github.com/gianmarcorosso/tasi-zia.git
+cd tasi-zia
 
 # Make it executable
 chmod +x tasi-zia
@@ -21,14 +27,14 @@ mv tasi-zia /usr/local/bin/
 ## Usage
 ```bash
 # Disable Zscaler
-./tasi-zia stop
+tasi-zia stop
 
 # Enable Zscaler
-./tasi-zia start
+tasi-zia start
 
 # Check current status
-./tasi-zia
-./tasi-zia check
+tasi-zia
+tasi-zia check
 ```
 
 ## How it works
